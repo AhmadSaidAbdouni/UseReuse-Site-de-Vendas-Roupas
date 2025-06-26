@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UseReuse</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Work+Sans&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .header-controls-fixed {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      gap: 1rem;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container" style="display: flex; align-items: center; padding: 0 1rem;">
+      <div class="nome-empresa" style="flex: 1;">UseReuse</div>
+    </div>
+    <div class="header-controls header-controls-fixed">
+      <button id="dark-mode-toggle">🌓</button>
+      <button id="carrinho-btn">🛒 <span id="contador-carrinho">0</span></button>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <section class="filtros">
+    <input type="text" id="busca" placeholder="Buscar produto..." />
+    <select id="filtro-categoria">
+      <option value="">Todas as categorias</option>
+    </select>
+  </section>
+
+  <section class="produtos" id="lista-produtos">
+    <!-- Produtos serão adicionados aqui via JavaScript -->
+  </section>
+
+  <footer>
+    <p>© 2025 UseReuse - Roupas usadas com estilo.</p>
+  </footer>
+
+  <div id="carrinho" class="modal">
+    <div class="modal-content">
+      <span id="fechar-carrinho">&times;</span>
+      <h2>Seu Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

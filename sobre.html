@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre a UseReuse</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Work+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--grafite);
+    }
+
+    main h1 {
+      font-family: var(--fonte-titulo);
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--verde-musgo);
+      text-align: center;
+    }
+
+    main p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+
+    main img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(75, 96, 67, 0.3);
+    }
+
+    .voltar-home {
+      display: block;
+      margin: 2rem auto 1rem;
+      text-align: center;
+      font-weight: bold;
+      color: var(--caramelo);
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .voltar-home:hover {
+      color: var(--verde-musgo);
+      text-decoration: underline;
+    }
+
+    body.dark main {
+      color: var(--bege-claro);
+    }
+
+    body.dark main img {
+      box-shadow: 0 4px 8px rgba(181, 165, 142, 0.6);
+    }
+
+    .main-nav {
+      background-color: var(--caramelo);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    .main-nav a {
+      color: var(--bege-claro);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-nav a:hover {
+      color: var(--grafite);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container" style="display: flex; align-items: center; padding: 0 1rem;">
+      <div class="nome-empresa" style="flex: 1;">UseReuse</div>
+    </div>
+    <div
+      class="header-controls header-controls-fixed"
+      style="position: fixed; top: 1rem; right: 1rem; display: flex; gap: 1rem; z-index: 1000;"
+    >
+      <button id="dark-mode-toggle">🌓</button>
+      <button id="carrinho-btn">
+        🛒 <span id="contador-carrinho">0</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="sobre.html" style="text-decoration: underline;">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <h1>Sobre a UseReuse</h1>
+    <p>
+      Na UseReuse, acreditamos que moda e sustentabilidade caminham lado a lado. Somos uma
+      loja dedicada à venda de roupas usadas de qualidade, que valorizam a história por trás de cada peça
+      e promovem o consumo consciente.
+    </p>
+    <p>
+      Nosso compromisso é oferecer produtos que inspirem um estilo de vida mais sustentável,
+      reduzindo o desperdício e incentivando a reutilização inteligente. Cada roupa que você encontra aqui
+      tem uma história e um propósito, ajudando a construir um futuro melhor para o planeta.
+    </p>
+    <p>
+      Além disso, valorizamos o design, a diversidade e a acessibilidade, para que todos possam expressar seu
+      estilo com personalidade, sem abrir mão da responsabilidade ambiental.
+    </p>
+
+    <img src="img/sobre-cabideiro.jpg" alt="Roupas em cabides organizadas" />
+
+    <a href="index.html" class="voltar-home">← Voltar para a Home</a>
+  </main>
+
+  <footer>
+    <p style="background-color: var(--verde-musgo); color: var(--bege-claro); text-align: center; padding: 1rem; margin-top: 2rem;">
+      © 2025 UseReuse - Roupas usadas com estilo.
+    </p>
+  </footer>
+
+  <div id="carrinho" class="modal">
+    <div class="modal-content">
+      <span id="fechar-carrinho">&times;</span>
+      <h2>Seu Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
