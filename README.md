@@ -32,9 +32,25 @@ Acesse o site online clicando no link abaixo:
 
 ## 🖼️ Capturas de Tela
 
-| Página Inicial | Modo Escuro | Carrinho Aberto |
-|----------------|-------------|------------------|
-| ![](img/demo-home.png) | ![](img/demo-dark.png) | ![](img/demo-cart.png) |
+| Página Inicial |
+|----------------|
+| ![Home](https://github.com/user-attachments/assets/7dd93fa6-482a-4347-9355-899fc3ca4d6a)|
+
+| Modo Escuro |
+|----------------|
+| ![Home Dark](https://github.com/user-attachments/assets/8fb33c77-1c9d-4f71-8c56-cbfb873126b8)|
+
+| Carrinho |
+|----------------|
+| ![Carrinho](https://github.com/user-attachments/assets/f35d7851-6251-47d7-8c35-28e2ded5cead)|
+
+| Página Sobre |
+|----------------|
+| ![Sobre](https://github.com/user-attachments/assets/48906c8b-0fbb-425a-b465-2ec3eb57cf81)|
+
+| Página Contato |
+|----------------|
+| ![Contato](https://github.com/user-attachments/assets/6141c18d-2ece-4a6c-9ccf-0c61c21a67e2)|
 
 ---
 
