@@ -1,6 +1,7 @@
 
 <h1 align="center">Site de Vendas - UseReuse Moda Sustentável</h1>
 
+![Cópia de Cópia de ↓ Read More ↓](https://github.com/user-attachments/assets/3958cf84-3e69-4d52-8ff5-450bb6d2db99)
 
 
 ## :dart: Descrição do Projeto
